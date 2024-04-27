@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michell">
+    <title>Formulario de Inscripción</title>
+    
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><h1>Formulario de Inscripción</h1></legend>
+            <p>Los campos que tienen un (*) son obligatorios</p>
+            <label for="u-firstname">*Nombre:</label>
+            <input id="u-firstname" name="u-firstname" type="text" placeholder="Ingrese su nombre" required><br>
+
+            <label for="u-lastname">*Apellido:</label>
+            <input id="u-lastname" name="u-lastname" type="text" placeholder="Ingrese su apellido" required><br>
+
+            <label for="u-email">*Correo:</label>
+            <input id="u-email" name="u-email" type="email" placeholder="Ingrese su correo electrónico" required><br>
+
+            <label for="u-address">Dirección:</label>
+            <input id="u-address" name="u-address" type="text" placeholder="Ingrese su dirección"><br>
+
+            <label for="u-department">Departamento:</label>
+            <input id="u-department" name="u-department" type="text" placeholder="Ingrese su departamento"><br>
+
+            <label for="u-country">*País:</label>
+            <input id="u-country" name="u-country" type="text" placeholder="Ingrese su país" required><br>
+
+            <label for="u-phone">Teléfono de contacto:</label>
+            <input id="u-phone" name="u-phone" type="tel" placeholder="Ingrese su teléfono de contacto"><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Descripción Personal (máximo 300 palabras)</legend>
+            <textarea id="f-description" name="f-description" placeholder="Ingrese su descripción personal (máximo 300 palabras)" maxlength="300"></textarea>
+        </fieldset>
+        
+        <fieldset>
+            <legend>*¿A qué carrera deseas inscribirte?</legend>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Jobs to be done</label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Cloud Native </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Frontend</label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Backend </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Fundamentals</label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Python </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Marketing Digital</label> <br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Fundamentals Data </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Introducción a Java </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">A comunicarte con las inteligencias artificiales</label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Marco conceptual y legal de la IA </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Diálogos digitales: GPT para principiantes </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Designops </label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Business Analyst</label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Flutter</label><br>
+            <input type="radio" id="html" name="carrera" required>
+            <label for="html">Design thinking for Software developers </label><br>
+        </fieldset>
+        
+        <fieldset>
+            <legend>*Modalidad</legend>
+            <input type="radio" id="presencial" name="modalidad" required>
+            <label for="presencial">Presencial</label><br>
+            <input type="radio" id="online" name="modalidad" required>
+            <label for="online">Online</label><br>
+        </fieldset>
+        
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Restablecer">
+    </form>
+</body>
+</html>
