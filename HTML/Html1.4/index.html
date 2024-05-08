@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+    <form action="#" method="POST">
+        <fieldset>
+            <legend><strong>Información de Contacto</strong></legend>
+
+            <label for="nombre"><strong>Nombre:</strong></label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
+
+            <label for="email"><strong>Correo Electrónico:</strong></label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="telefono"><strong>Teléfono:</strong></label><br>
+            <input type="tel" id="telefono" name="telefono"><br><br>
+
+            <label for="mensaje"><strong>Mensaje: </strong></label><br>
+            <textarea id="mensaje" name="mensaje" rows="4" cols="50" required></textarea><br><br>
+
+            <label for="motivo"><strong>Motivo de Contacto:</strong></label><br>
+            <select id="motivo" name="motivo" required>
+                <optgroup label="General">
+                    <option value="consulta">Consulta</option>
+                    <option value="sugerencia">Sugerencia</option>
+                    <option value="comentario">Comentario</option>
+                    <option value="problema">Reportar un problema</option>
+                    <option value="ayuda">Solicitar ayuda</option>
+                </optgroup>
+            
+                    
+              
+            </select><br><br>
+
+            <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+</body>
+</html>

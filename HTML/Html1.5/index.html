@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+</head>
+
+<body>
+
+    <h1>Formulario de Contacto</h1>
+
+    <form method="post">
+        <p>Los campos precedidos por un (*) son obligatorios</p>
+        <fieldset>
+            <legend>Datos personales</legend>
+            <label for="u-firstname">*Nombre: </label>
+            <input id="u-firstname" name="u-firstname" type="text" required>
+            <label for="u-lastname">Apellido: </label>
+            <input id="u-lastname" name="u-lastname" type="text">
+            <br>
+            <label>*Género: </label>
+            <input id="u-gender--male" name="u-gender" type="radio" value="male" required>
+            <label for="u-gender--male">Masculino</label>
+            <input id="u-gender--female" name="u-gender" type="radio" value="female" required>
+            <label for="u-gender--female">Femenino</label>
+            <input id="u-gender--no-binary" name="u-gender" type="radio" value="no-binary" required>
+            <label for="u-gender--no-binary">No binario</label>
+        </fieldset>
+        <fieldset>
+            <legend>Datos de contacto</legend>
+            <label for="u-email">*Correo electrónico: </label>
+            <input id="u-email" name="u-email" type="email" required>
+            <br>
+            <label for="u-tel">Teléfono: </label>
+            <input id="u-tel" name="u-tel" type="tel" placeholder="322 444 2233" pattern="[0-9]{3} [0-9]{3} [0-9]{4}">
+        </fieldset>
+        <fieldset>
+            <label for="f-type">¿Qué necesitas?</label>
+            <br>
+            <select id="f-type" name="f-type" required>
+                <option value="">Selecciona una opción...</option>
+                <option value="greets">Me siento mal</option>
+                <option value="quotes">Necesito tu ayuda </option>
+                <option value="complaint">Solo quiero hablar</option>
+            </select>
+            <br>
+            <label for="f-date">¿Cuándo te puedo contactar?</label>
+            <br>
+            <input id="f-date" name="f-date" type="datetime-local">
+            <br>
+            <label for="f-description">Puedes enviarme un mensaje</label>
+            <br>
+            <textarea id="f-description" name="f-description" required></textarea>
+            <br>
+            <label for="f-files">Archivos adjuntos:</label>
+            <br>
+            <input id="f-files" name="f-files" type="file" multiple>
+        </fieldset>
+        <button type="reset">Limpiar</button>
+        <button type="submit">Enviar</button>
+    </form>
+
+</body>
+
+</html>
+
