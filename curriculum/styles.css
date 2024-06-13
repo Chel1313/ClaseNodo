@@ -88,9 +88,13 @@ header img {
     padding: 10px;
   }
 
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
   header img {
-    margin: 0;
     margin-bottom: 10px;
   }
 
@@ -114,8 +118,8 @@ header img {
   .container {
     display: none;
   }
- 
 }
+
 .tarjeta .header-info h1 {
   margin: 30px 50px; 
   font-size: 25px; /* Ajuste del tamaño de la fuente para el nombre */
@@ -127,12 +131,13 @@ header img {
   font-size: 15px; /* Ajuste del tamaño de la fuente para la descripción */
   color: #000000;
 }
-.frase{
+
+.frase {
   margin: -10% 50px 80px;
   font-size: 11px; /* Ajuste del tamaño de la fuente para la descripción */
-
 }
-.redes{
+
+.redes {
   margin: -14% 50px 80px;
   font-size: 12px; 
 }
